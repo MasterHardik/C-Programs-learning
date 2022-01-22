@@ -1,18 +1,31 @@
-//20. Program to take number from user and print table of that number.
+/*
+21. Pattern 1
 
+•
+• •
+• • •
+• • • •
+• • • • •
+
+*/
 #include<stdio.h>
 #include<conio.h>
 
 void main()
 {
-    int i, n;
+    int i, j, n;
     clrscr();
 
-    printf("Enter number : ");
+    printf("Enter number :");
     scanf("%d", &n);
 
-    for(i = 1; i <= 10; i++)
-        printf("%d × %d = %d\n", n, i, n*i);
-
+    for(i=1; i<=n; i++)
+    {
+        for(j=1; j<=i; j++)
+        {
+            printf("• ");
+        }
+        printf("\n");
+    }
     getch();
 }
